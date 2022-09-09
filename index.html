@@ -15,8 +15,15 @@
 <body>
     <header id="header" class="col-sm-12 p-5">
         <nav class="navbar bg-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">mackenzie gray</a>
+            <div class="container-fluid d-flex justify-content-between">
+                <div id="weather">
+                    <span id="live-clock"></span><br>
+                    <span id="address"></span><br>
+                    <span class="temperatura"></span>°C
+                </div>
+
+                <a id="name" class="navbar-brand" href="#">mackenzie gray</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,7 +38,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">projects</a>
+                                <a class="nav-link" href="#projects">projects</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">contact</a>
@@ -42,52 +49,76 @@
             </div>
         </nav>
     </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <div class="jumbotron">
-        <div class="container d-flex justify-content-center">
-            <div class="col-sm-8 text-center">
-                <div>
-                    <h2>Hi, I'm Mackenzie. Welcome to my portfolio.</h2>
-                    <br>
-                    <p>Take a look at some of my projects, repos and my contact information.</p>
+    <main>
+        <div class="jumbotron">
+            <div class="container d-flex justify-content-center mt-10">
+                <div class="col-sm-8 text-center">
+                    <div>
+                        <h2>Hi, I'm Mackenzie. Welcome to my portfolio.</h2>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Take a look at some of my projects, repos and my contact information.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <div>
+                            <img src="./assets/images/headshot.png" class="img-responsive" alt="head-shot">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container-fluid col-sm-10 bg-3 text-center">    
-        <h3>Some of my Work</h3><br>
-        <div class="row">
-            <div class="col-sm-6">
-                <a href="https://frozen-basin-60308.herokuapp.com/">
-                    <p>Tech Blog</p>
-                    <img src="./assets/images/techblog.jpg" class="img-responsive" style="width:100%" alt="tech_blog">
-                </a>                
-            </div>
-            <div class="col-sm-6"> 
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-6"> 
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-6">
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-        </div>
-    </div><br>
     
-    <div class="footer m-3 position-absolute bottom-0 start-0">
-        <div class="site-footer">                                            
-            <div id="weather">
-                <span id="live-clock"></span><br>
-                <span id="address"></span><br>
-                <span class="temperatura"></span>°C
+        <div id="projects" class="container-fluid col-sm-10 bg-3 text-center">    
+            <h3>Some of my Work</h3><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="https://frozen-basin-60308.herokuapp.com/">
+                        <p>Tech Blog</p>
+                        <img src="./assets/images/tech_blog.jpg" class="img-responsive" style="width:100%" alt="tech_blog">
+                    </a>                
+                </div>
+                <div class="col-sm-6">
+                    <a href="https://github.com/mdkgray/E-commerce_back_end">
+                        <p>E-Commerce Back End</p>
+                        <img src="./assets/images/ecommerce.jpg" class="img-responsive" style="width:100%" alt="commerce">
+                    </a>                
+                </div> 
+                <div class="col-sm-6">
+                    <a href="https://mdkgray.github.io/weather_dashboard/">
+                        <p>Weather Dashboard</p>
+                        <img src="./assets/images/weather.jpg" class="img-responsive" style="width:100%" alt="weather">
+                    </a>                
+                </div>
+                <div class="col-sm-6">
+                    <a href="https://mdkgray.github.io/password_generator/">
+                        <p>Password Generator</p>
+                        <img src="./assets/images/password.jpg" class="img-responsive" style="width:100%" alt="password">
+                    </a>                
+                </div>            
+                <div class="col-sm-6">
+                    <a href="https://pacific-waters-66801.herokuapp.com/">
+                        <p>Check-A-Tradie</p>
+                        <img src="./assets/images/tool.jpg" class="img-responsive" style="width:100%" alt="tools">
+                    </a>                
+                </div>
+                <div class="col-sm-6">
+                    <a href="https://calm-sea-51607.herokuapp.com/">
+                        <p>Daily Note Taker</p>
+                        <img src="./assets/images/notetaker.jpg" class="img-responsive" style="width:100%" alt="notes">
+                    </a>                
+                </div>              
             </div>
-        </div>
-    </div>
+        </div><br>    
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -1,7 +1,32 @@
 body {
     font-family: 'IBM Plex Mono', monospace;
     background-color: black;
-    color:ghostwhite
+    color:ghostwhite;
+    /* position: relative; */
+}
+
+#header {
+    height: 25%;
+}
+
+/* #weather {
+    width: auto;
+} */
+
+#name {
+    font-size: 30px;
+}
+
+.jumbotron{
+    height: 100vh;
+}
+
+#weather {
+    color: black;
+}
+
+#projects {
+    height: 100vh;
 }
 
 p, h5 {
