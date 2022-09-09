@@ -1,7 +1,7 @@
 $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            const target = $(this.hash);
+            var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
                 $('html, body').animate({
@@ -14,15 +14,16 @@ $(function() {
 });
 
 function round(value, precision) {
-    const multiplier = Math.pow(10, precision || 0);
+    var multiplier = Math.pow(10, precision || 0);
     return Math.round(value * multiplier) / multiplier;
 }
+
 
 $(document).ready(function(){
     displayTime();
     setInterval(displayTime, 1000);
 
-    let zip, country, locIP, latIP, lonIP = '';
+    var zip, country, locIP, latIP, lonIP = '';
 
     /* https://ipinfo.io/json?token=62f16ef67528e4 */
 
@@ -36,22 +37,25 @@ $(document).ready(function(){
             $("#details").html(JSON.stringify(response, null, 4));
         }
         console.log('city ' + response.city);
+
     }, "jsonp");
 
     setTimeout(function(){
-        const tempString = "https://api.openweathermap.org/data/2.5/weather?lat=" + latIP + "&lon=" + lonIP + "&appid=62586c3c7465e498380af78d50211e67&units=metric&lang=it";
-        $.get(tempString, function (response) {
-        $('.temperatura').text((Math.round(response.main.temp * 10) / 10).toFixed(1));
-        }, "jsonp");
-    }, 1000)
+        var tempString = "https://api.openweathermap.org/data/2.5/weather?lat=" + latIP + "&lon=" + lonIP + "&appid=62586c3c7465e498380af78d50211e67&units=metric&lang=it";
+//console.log(locIP + ' | ' + latIP + ' | ' +lonIP + ' | ');
+$.get(tempString, function (response) {
+$('.temperatura').text((Math.round(response.main.temp * 10) / 10).toFixed(1));
+}, "jsonp");
+}, 1000)  
+
 })
 
 /* time */
 function displayTime() {
-    const currentTime = new Date();
-    const hours = currentTime.getHours();
-    const minutes = currentTime.getMinutes();
-    const seconds = currentTime.getSeconds();
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
 
     if(hours < 10) {
         hours = "0" + hours;
@@ -63,7 +67,7 @@ function displayTime() {
         seconds = "0" + seconds;
     }
 
-    const clockDiv = document.getElementById('live-clock');
+    var clockDiv = document.getElementById('live-clock');
 
     clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
-}
+}       

@@ -9,20 +9,18 @@ body {
     height: 25%;
 }
 
-/* #weather {
-    width: auto;
-} */
+#weather {
+    width: fit-content;
+    color: black;
+}
 
 #name {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .jumbotron{
     height: 100vh;
-}
-
-#weather {
-    color: black;
 }
 
 #projects {
