@@ -3,3 +3,7 @@ body {
     background-color: black;
     color:ghostwhite
 }
+
+p, h5 {
+    color:ghostwhite
+}
