@@ -15,7 +15,7 @@
 <body>
     <header class="col-sm-12 p-5">
         <nav id="header" class="navbar bg-light fixed-top">
-            <div class="container-fluid d-flex justify-content-between">
+            <div id="header" class="container-fluid d-flex justify-content-between">
                 <div id="weather">
                     <span id="live-clock"></span><br>
                     <span id="address"></span><br>
@@ -23,7 +23,7 @@
                 </div>
                 
                 <div class="d-flex">
-                    <a id="name" class="navbar-brand" href="#"><span><img src="./assets/images/ZORB.png" id="zorb"></span>mackenzie gray</a>
+                    <a id="name" class="navbar-brand" href="#"><span><img src="./assets/images/ZORB.png" class="img-fluid" alt="zorb"id="zorb"></span class="text-wrap text-break">mackenzie gray</a>
                 </div>                
 
                 <button class="navbar-toggler me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -57,30 +57,17 @@
             </div>
         </nav>
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
     <main>
         <section>
-            <div class="jumbotron" style="height: 85vh;">
-                <div class="container d-flex justify-content-center mt-10">
-                    <div class="col-sm-8 text-center">
-                        <div>
-                            <h2>Hi, I'm Mackenzie.</h2>
-                            <img id="headshot" src="assets/images/headshot.png" class="border rounded-circle col-md-6 mw-80 mh-80 m-5">
-                            <br>
-                            <p>I am a full stack developer based in Sydney, Australia. With a focus on attention to detail, creating polished and efficient code and working with people, my passion lies in software development and product management in the technology space.</p>
-                            <br>
-                            <p>I have a certificate in full stack develop from the University of Sydney Coding Bootcamp.</p>
-                            <br>
-                            <p>Take a look at some of my projects, repos, contact information and resume.</p>
-                            <br>
-                            <br>
-                        </div>
+            <div class="jumbotron" style="height: 100vh;">
+                <div class="container d-flex col-md-8 justify-content-center mt-10">
+                    <div class="text-center text-wrap text-break">
+                        <img id="headshot" src="assets/images/headshot.png" class="border rounded-circle img-fluid">
+                        <h2 class="lh-lg">Hi, I'm Mackenzie.</h2>
+                        <p class="lh-lg">I am a full stack developer based in Sydney, Australia. With a focus on attention to detail, creating polished and efficient code and working with people, my passion lies in software development and product management in the technology space.</p>
+                        <p class="lh-lg">I have a certificate in full stack develop from the University of Sydney Coding Bootcamp.</p>
+                        <p class="lh-lg">Take a look at some of my projects, repos, skills, contact information and resume.</p>
                     </div>
                 </div>
             </div>    
@@ -88,9 +75,9 @@
 
         <section>
             <div id="projects" class="container col-md-12 bg-3 text-center justify-content-evenly">    
-                <h3>Some of my Work</h3><br>
+                <h2>Some of my Work</h2><br>
                 <div class="row w-100 justify-content-evenly p-1">
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded" style="width: max-content">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
                         <h4>Check-A-Tradie</h4>
                         <img src="./assets/projectImages/check_a_tradie.png" class="img-responsive rounded-3" style="width:100%" alt="check_a_tradie">
                         <p class="m-5">Node.js | Express.js | MySQL | Sequelize | Javascript | Handlebars.js | Bootstrap | npm | Heroku</p>
@@ -98,7 +85,7 @@
                         <a href="https://github.com/mdkgray/check-a-tradie" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
                     </div>
                     
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded" style="width: max-content">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
                         <h4>Portfoligray</h4>
                         <img src="./assets/projectImages/portfoligray.png" class="img-responsive rounded-3" style="width:100%" alt="portfoligray.png">
                         <p class="m-5">React | Javascript | HTML | CSS | MUI</p>
@@ -106,7 +93,7 @@
                         <a href="https://github.com/mdkgray/portfoligray" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
                     </div>
 
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
                         <h4>Tech Blog</h4>
                         <img src="./assets/projectImages/tech_blog.png" class="img-responsive rounded-3" style="width:100%" alt="tech_blog">
                         <p class="m-5">Node.js | Express.js | MySQL | Sequelize | Javascript | Handlebars.js | Bootstrap | npm | Heroku</p>
@@ -114,7 +101,7 @@
                         <a href="https://github.com/mdkgray/tech_blog" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
                     </div>
 
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
                         <h4>E-Commerce Back End</h4>
                         <img src="./assets/projectImages/ecommerce.jpg" class="img-responsive rounded-3" style="width:100%" alt="ecommerce">
                         <p class="m-5">Express.js | MySQL | Sequelize</p>
@@ -122,7 +109,7 @@
                         <a href="https://github.com/mdkgray/E-commerce_back_end" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
                     </div>
 
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded" style="width: max-content">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
                         <h4>bookMERN</h4>
                         <img src="./assets/projectImages/bookMERN.png" class="img-responsive rounded-3" style="width:100%" alt="bookMERN">
                         <p class="m-5">MongoDB | Express.js | React | Node.js | Mongoose | GraphQL | Javascript | JWT | Apollo-Server | Heroku</p>
@@ -130,7 +117,7 @@
                         <a href="https://github.com/mdkgray/bookMERN" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
                     </div>                    
 
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded" style="width: max-content">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
                         <h4>Marvellous Universe</h4>
                         <img src="./assets/projectImages/marvelgif.gif" class="img-responsive rounded-3" style="width:100%" alt="marvel">
                         <p class="m-5">Javascript | HTML | CSS | Bootstrap | API</p>
@@ -138,7 +125,7 @@
                         <a href="https://github.com/mdkgray/marvel_universe" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
                     </div>
 
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
                         <h4>Weather Dashboard</h4>
                         <img src="./assets/projectImages/weather_app.png" class="img-responsive rounded-3" style="width:100%" alt="weather">
                         <p class="m-5">HTML | Moment.js | JQuery | Javascript | CSS | Bootstrap | OpenWeather One Call API</p>
@@ -146,7 +133,7 @@
                         <a href="https://github.com/mdkgray/weather_dashboard" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
                     </div>
 
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
                         <h4>Password Generator</h4>
                         <img src="./assets/projectImages/password.jpg" class="img-responsive rounded-3" style="width:100%" alt="password">
                         <p class="m-5">HTML | Javascript | CSS</p>
@@ -154,7 +141,7 @@
                         <a href="https://github.com/mdkgray/password_generator" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
                     </div>
 
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
                         <h4>Employee Tracker</h4>
                         <img src="./assets/projectImages/employee_tracker.png" class="img-responsive rounded-3" style="width:100%" alt="employee_tracker">
                         <p class="m-5">Javascript | MySQL | npm</p>
@@ -162,7 +149,7 @@
                         <a href="https://github.com/mdkgray/employee_tracker" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
                     </div>
 
-                    <div class="col-md-4 m-3 p-3 border border-4 rounded">                
+                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
                         <h4>Daily Note Taker</h4>
                         <img src="./assets/projectImages/note_taker.png" class="img-responsive rounded-3" style="width:100%" alt="note_taker">
                         <p class="m-5">Express.js | Node.js | Javascript | CSS | HTML</p>
@@ -175,7 +162,7 @@
 
         <section>
             <div id="skills" class="container text-center col-sm-11 bg-3 justify-content-evenly p-5">
-                <h3>Skills</h3>
+                <h2>Skills</h2>
                 <div class="row justify-content-evenly align-items-center">
                     <div class="d-flex justify-content-center col-sm-3 p-3">
                         <img src="./assets/icons/html.png" class="img-responsive rounded-3" style="width:50%" alt="html">
@@ -207,21 +194,19 @@
         
         <section class="container text-center col-md-6 justify-content-evenly p-5">
             <div id="resume" class="d-flex row mt-5">
-                <h3 class="mb-5">Download my resume</h3>
+                <h2 class="mb-5">Download my resume</h2>
                 <a href="./assets/mackenzie_gray_resume.pdf" download="mackenzie_gray_resume.pdf" target="_blank"><button type="button" class="btn btn-dark">Download</button></a>
             </div>  
 
             <div id="contact">
-                <h3 class="mb-5">Contact</h3>
+                <h2 class="mb-5">Contact</h2>
                 <div class="d-flex justify-content-evenly">
                     <div>
                         <a href="https://github.com/mdkgray" target="_blank"><button type="button" class="btn btn-light">Github</button></a>
                     </div>
-                    <br>
                     <div>
                         <a href="mailto:mdkulen@gmail.com" target="_blank"><button type="button" class="btn btn-light">Email</button></a>
                     </div>
-                    <br>
                     <div>
                         <a href="https://www.linkedin.com/in/mackenzie-gray-5a68aa46/" target="_blank"><button type="button" class="btn btn-light">Linkedin</button></a>
                     </div>
