@@ -4,12 +4,19 @@ html {
 
 body {
     font-family: 'IBM Plex Mono', monospace;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(32, 98, 157);
     color:black;
 }
 
 #header {
-    height: 25%;
+    height: 10%;
+}
+
+#zorb {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    margin-bottom: 3px;
 }
 
 #weather {
