@@ -2,9 +2,13 @@ html {
     cursor: crosshair;
 }
 
+#headshot {
+    margin-top: 100px;
+}
+
 body {
     font-family: 'IBM Plex Mono', monospace;
-    background-color: #F0E7D8;
+    background-color: #dfdede;
     color:black;
 }
 
@@ -47,4 +51,16 @@ p, h5 {
 #footer {
     padding: 5px;
     margin-top: 100px;
+}
+
+@media screen and (min-width: 545px) {
+    #name {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    #name {
+        font-size: 26px;
+    }
 }

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="col-sm-12 p-5">
-        <nav id="header" class="navbar bg-light fixed-top">
+    <header id="header" class="col-sm-12 p-5">
+        <nav class="navbar bg-light fixed-top">
             <div id="header" class="container-fluid d-flex justify-content-between">
                 <div id="weather">
                     <span id="live-clock"></span><br>
@@ -43,7 +43,7 @@
                                 <a class="nav-link" href="#projects">projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#skills">skills</a>
+                                <a class="nav-link" href="#skills">proficiencies</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#resume">resume</a>
@@ -58,112 +58,157 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div class="jumbotron" style="height: 100vh;">
-                <div class="container d-flex col-md-8 justify-content-center mt-10">
-                    <div class="text-center text-wrap text-break">
-                        <img id="headshot" src="assets/images/headshot.png" class="border rounded-circle img-fluid">
-                        <h2 class="lh-lg">Hi, I'm Mackenzie.</h2>
-                        <p class="lh-lg">I am a full stack developer based in Sydney, Australia. With a focus on attention to detail, creating polished and efficient code and working with people, my passion lies in software development and product management in the technology space.</p>
-                        <p class="lh-lg">I have a certificate in full stack develop from the University of Sydney Coding Bootcamp.</p>
-                        <p class="lh-lg">Take a look at some of my projects, repos, skills, contact information and resume.</p>
-                    </div>
-                </div>
-            </div>    
-        </section>
-
-        <section>
-            <div id="projects" class="container col-md-12 bg-3 text-center justify-content-evenly">    
-                <h2>Some of my Work</h2><br>
-                <div class="row w-100 justify-content-evenly p-1">
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
-                        <h4>Check-A-Tradie</h4>
-                        <img src="./assets/projectImages/check_a_tradie.png" class="img-responsive rounded-3" style="width:100%" alt="check_a_tradie">
-                        <p class="m-5">Node.js | Express.js | MySQL | Sequelize | Javascript | Handlebars.js | Bootstrap | npm | Heroku</p>
-                        <a href="https://pacific-waters-66801.herokuapp.com/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/check-a-tradie" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>
-                    
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
-                        <h4>Portfoligray</h4>
-                        <img src="./assets/projectImages/portfoligray.png" class="img-responsive rounded-3" style="width:100%" alt="portfoligray.png">
-                        <p class="m-5">React | Javascript | HTML | CSS | MUI</p>
-                        <a href="https://mdkgray.github.io/portfoligray/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/portfoligray" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>
-
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
-                        <h4>Tech Blog</h4>
-                        <img src="./assets/projectImages/tech_blog.png" class="img-responsive rounded-3" style="width:100%" alt="tech_blog">
-                        <p class="m-5">Node.js | Express.js | MySQL | Sequelize | Javascript | Handlebars.js | Bootstrap | npm | Heroku</p>
-                        <a href="https://frozen-basin-60308.herokuapp.com/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/tech_blog" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>
-
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
-                        <h4>E-Commerce Back End</h4>
-                        <img src="./assets/projectImages/ecommerce.jpg" class="img-responsive rounded-3" style="width:100%" alt="ecommerce">
-                        <p class="m-5">Express.js | MySQL | Sequelize</p>
-                        <a href="https://github.com/mdkgray/E-commerce_back_end" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/E-commerce_back_end" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>
-
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
-                        <h4>bookMERN</h4>
-                        <img src="./assets/projectImages/bookMERN.png" class="img-responsive rounded-3" style="width:100%" alt="bookMERN">
-                        <p class="m-5">MongoDB | Express.js | React | Node.js | Mongoose | GraphQL | Javascript | JWT | Apollo-Server | Heroku</p>
-                        <a href="https://thawing-escarpment-08809.herokuapp.com/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/bookMERN" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>                    
-
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
-                        <h4>Marvellous Universe</h4>
-                        <img src="./assets/projectImages/marvelgif.gif" class="img-responsive rounded-3" style="width:100%" alt="marvel">
-                        <p class="m-5">Javascript | HTML | CSS | Bootstrap | API</p>
-                        <a href="https://mdkgray.github.io/marvel_universe/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/marvel_universe" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>
-
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
-                        <h4>Weather Dashboard</h4>
-                        <img src="./assets/projectImages/weather_app.png" class="img-responsive rounded-3" style="width:100%" alt="weather">
-                        <p class="m-5">HTML | Moment.js | JQuery | Javascript | CSS | Bootstrap | OpenWeather One Call API</p>
-                        <a href="https://mdkgray.github.io/weather_dashboard/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/weather_dashboard" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>
-
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
-                        <h4>Password Generator</h4>
-                        <img src="./assets/projectImages/password.jpg" class="img-responsive rounded-3" style="width:100%" alt="password">
-                        <p class="m-5">HTML | Javascript | CSS</p>
-                        <a href="https://mdkgray.github.io/password_generator/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/password_generator" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>
-
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
-                        <h4>Employee Tracker</h4>
-                        <img src="./assets/projectImages/employee_tracker.png" class="img-responsive rounded-3" style="width:100%" alt="employee_tracker">
-                        <p class="m-5">Javascript | MySQL | npm</p>
-                        <a href="https://github.com/mdkgray/employee_tracker" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/employee_tracker" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>
-
-                    <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
-                        <h4>Daily Note Taker</h4>
-                        <img src="./assets/projectImages/note_taker.png" class="img-responsive rounded-3" style="width:100%" alt="note_taker">
-                        <p class="m-5">Express.js | Node.js | Javascript | CSS | HTML</p>
-                        <a href="https://calm-sea-51607.herokuapp.com/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
-                        <a href="https://github.com/mdkgray/note_taker" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
-                    </div>
+    <section>
+        <div class="jumbotron" style="height: 100vh;">
+            <div class="container d-flex col-md-8 justify-content-center mt-10">
+                <div class="text-center text-wrap text-break">
+                    <img id="headshot" src="assets/images/headshot.png" class="border rounded-circle img-fluid">
+                    <h2 class="lh-lg">Hi, I'm Mackenzie.</h2>
+                    <p class="lh-lg">Problem solver with attention to detail with a certificate in full stack web development from University of Sydney, seeking a role as a front end developer with aspirations to transition into product management.</p>
+                    <br>
+                    <p class="lh-lg">Past experiences as a semi-professional rugby player and Chiropractor have allowed me to become skilled in working within a team, communication, problem solving and professionalism. I thrive in a fast paced, quality driven team environment and thoroughly enjoy working with people and collaborating with other developers on projects.</p>
+                    <br>
+                    <p class="lh-lg">An eager learner, team player and someone that takes tremendous pride in their work and attention to detail, I am excited to apply the technical skills I have learnt with my collaborative nature and past experiences to write and produce efficient and clean code.</p>
+                    <br>
+                    <a href="https://github.com/mdkgray" target="_blank"><button type="button" class="btn btn-light">Github</button></a>
+                    <a href="mailto:mdkulen@gmail.com" target="_blank"><button type="button" class="btn btn-light">Email</button></a>
+                    <a href="https://www.linkedin.com/in/mackenzie-gray-5a68aa46/" target="_blank"><button type="button" class="btn btn-light">Linkedin</button></a>
+                    <a href="https://twitter.com/mackenzie_gray3" target="_blank"><button type="button" class="btn btn-light">Twitter</button></a>
                 </div>
             </div>
-        </section>
+        </div>    
+    </section>
+
+    <main>
+        <div id="projects" class="container col-md-12 bg-3 text-center justify-content-evenly">    
+            <h2>Some of my Work</h2><br>
+            <div class="row w-100 justify-content-evenly p-1">
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
+                    <h4>FireStarter</h4>
+                    <p>A DAO (decentralised autonomous organisation) inspired full stack MERN application to connect developers with developers, and assist in lighting the spark of innovation for projects.</p>
+                    <img src="./assets/projectImages/firestarter.png" class="img-responsive rounded-3" style="width:100%" alt="firestarter">
+                    <p class="m-5">MongoDB | Express | React | Node | Mongoose | GraphQL | Apollo | JWT | Javascript | HTML | CSS | MUI | Heroku | npm</p>
+                    <a href="https://secret-headland-78641.herokuapp.com/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/fireStarter" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
+                    <h4>Portfoligray</h4>
+                    <p>A portfolio to showcase my skills and some of my previous projects in web development. This application was made with React and MUI as the React UI.</p>
+                    <img src="./assets/projectImages/portfoligray.png" class="img-responsive rounded-3" style="width:100%" alt="portfoligray.png">
+                    <p class="m-5">React | Javascript | HTML | CSS | MUI</p>
+                    <a href="https://mdkgray.github.io/portfoligray/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/portfoligray" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
+                    <h4>Check-A-Tradie</h4>
+                    <p>A place where tradespeople connect with members of the public looking for jobs that need completing.</p>
+                    <img src="./assets/projectImages/check_a_tradie.png" class="img-responsive rounded-3" style="width:100%" alt="check_a_tradie">
+                    <p class="m-5">Node.js | Express.js | MySQL | Sequelize | Javascript | Handlebars.js | Bootstrap | npm | Heroku</p>
+                    <a href="https://pacific-waters-66801.herokuapp.com/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/check-a-tradie" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
+                    <h4>Tech Blog</h4>
+                    <p>Full-stack blog post application where users can post and comment on all things tech.</p>
+                    <img src="./assets/projectImages/tech_blog.png" class="img-responsive rounded-3" style="width:100%" alt="tech_blog">
+                    <p class="m-5">Node.js | Express.js | MySQL | Sequelize | Javascript | Handlebars.js | Bootstrap | npm | Heroku</p>
+                    <a href="https://frozen-basin-60308.herokuapp.com/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/tech_blog" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
+                    <h4>E-Commerce Back End</h4>
+                    <p>Back-end for E-commerce site...everyone loves E-commerce!</p>
+                    <img src="./assets/projectImages/ecommerce.jpg" class="img-responsive rounded-3" style="width:100%" alt="ecommerce">
+                    <p class="m-5">Express.js | MySQL | Sequelize</p>
+                    <a href="https://github.com/mdkgray/E-commerce_back_end" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/E-commerce_back_end" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
+                    <h4>bookMERN</h4>
+                    <p>Track down books that interest you and save them to add to your collection!</p>
+                    <img src="./assets/projectImages/bookMERN.png" class="img-responsive rounded-3" style="width:100%" alt="bookMERN">
+                    <p class="m-5">MongoDB | Express.js | React | Node.js | Mongoose | GraphQL | Javascript | JWT | Apollo-Server | Heroku</p>
+                    <a href="https://thawing-escarpment-08809.herokuapp.com/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/bookMERN" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>                    
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded" style="width: max-content">                
+                    <h4>Marvellous Universe</h4>
+                    <p>Journey into the Marvel Universe and discover images of your favourite comics and characters.</p>
+                    <img src="./assets/projectImages/marvelgif.gif" class="img-responsive rounded-3" style="width:100%" alt="marvel">
+                    <p class="m-5">Javascript | HTML | CSS | Bootstrap | API</p>
+                    <a href="https://mdkgray.github.io/marvel_universe/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/marvel_universe" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
+                    <h4>Weather Dashboard</h4>
+                    <p>Search weather from all across the globe with a click of a button.</p>
+                    <img src="./assets/projectImages/weather_app.png" class="img-responsive rounded-3" style="width:100%" alt="weather">
+                    <p class="m-5">HTML | Moment.js | JQuery | Javascript | CSS | Bootstrap | OpenWeather One Call API</p>
+                    <a href="https://mdkgray.github.io/weather_dashboard/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/weather_dashboard" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
+                    <h4>Password Generator</h4>
+                    <p>Generate a secure password customized by length, uppercase/lowercase and special characters.</p>
+                    <img src="./assets/projectImages/password.jpg" class="img-responsive rounded-3" style="width:100%" alt="password">
+                    <p class="m-5">HTML | Javascript | CSS</p>
+                    <a href="https://mdkgray.github.io/password_generator/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/password_generator" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
+                    <h4>Employee Tracker</h4>
+                    <p>Keeping track of employees is super fun!</p>
+                    <img src="./assets/projectImages/employee_tracker.png" class="img-responsive rounded-3" style="width:100%" alt="employee_tracker">
+                    <p class="m-5">Javascript | MySQL | npm</p>
+                    <a href="https://github.com/mdkgray/employee_tracker" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/employee_tracker" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+
+                <div class="col-md-4 m-3 p-3 border border-dark border-2 border-opacity-50 rounded">                
+                    <h4>Daily Note Taker</h4>
+                    <p>Taking notes to keep me humble....you should try.</p>
+                    <img src="./assets/projectImages/note_taker.png" class="img-responsive rounded-3" style="width:100%" alt="note_taker">
+                    <p class="m-5">Express.js | Node.js | Javascript | CSS | HTML</p>
+                    <a href="https://calm-sea-51607.herokuapp.com/" target="_blank"><button type="button" class="btn btn-dark">Deployed</button></a>
+                    <a href="https://github.com/mdkgray/note_taker" target="_blank"><button type="button" class="btn btn-light">Source Code</button></a>                                
+                </div>
+            </div>
+        </div>
 
         <section>
             <div id="skills" class="container text-center col-sm-11 bg-3 justify-content-evenly p-5">
-                <h2>Skills</h2>
+                <h2>Proficiencies</h2>
                 <div class="row justify-content-evenly align-items-center">
+                    <div class="d-flex justify-content-center col-sm-3 p-3">
+                        <img src="./assets/icons/mongodb.png" class="img-responsive rounded-3" style="width:50%" alt="mongodb">
+                    </div>
+                    <div class="d-flex justify-content-center col-sm-3 p-3">
+                        <img src="./assets/icons/express.png" class="img-responsive rounded-3" style="width:50%" alt="express">
+                    </div>
+                    <div class="d-flex justify-content-center col-sm-3 p-3">
+                        <img src="./assets/icons/react.png" class="img-responsive rounded-3" style="width:50%" alt="react">
+                    </div>
+                    <div class="d-flex justify-content-center col-sm-3 p-3">
+                        <img src="./assets/icons/node.png" class="img-responsive rounded-3" style="width:50%" alt="node">
+                    </div>
+                    <div class="d-flex justify-content-center col-sm-3 p-3">
+                        <img src="./assets/icons/mongoose.png" class="img-responsive rounded-3" style="width:50%" alt="mongoose">
+                    </div>
+                    <div class="d-flex justify-content-center col-sm-3 p-3">
+                        <img src="./assets/icons/graphql.png" class="img-responsive rounded-3" style="width:50%" alt="graphql">
+                    </div>
+                    <div class="d-flex justify-content-center col-sm-3 p-3">
+                        <img src="./assets/icons/apollo.png" class="img-responsive rounded-3" style="width:50%" alt="apollo">
+                    </div>
                     <div class="d-flex justify-content-center col-sm-3 p-3">
                         <img src="./assets/icons/html.png" class="img-responsive rounded-3" style="width:50%" alt="html">
                     </div>
@@ -171,20 +216,24 @@
                         <img src="./assets/icons/css.png" class="img-responsive rounded-3" style="width:50%" alt="css">
                     </div>
                     <div class="d-flex justify-content-center col-sm-3 p-3">
-                        <img src="./assets/icons/js.png" class="img-responsive rounded-3" style="width:50%" alt="js">
-                    </div>
-                    <div class="d-flex justify-content-center col-sm-3 p-3">
-                        <img src="./assets/icons/mongodb.png" class="img-responsive rounded-3" style="width:50%" alt="mongodb">
-                    </div>
+                        <img src="./assets/icons/javascript.png" class="img-responsive rounded-3" style="width:50%" alt="js">
+                    </div>                    
                     <div class="d-flex justify-content-center col-sm-3 p-3">
                         <img src="./assets/icons/mysql.png" class="img-responsive rounded-3" style="width:50%" alt="mysql">
                     </div>
                     <div class="d-flex justify-content-center col-sm-3 p-3">
-                        <img src="./assets/icons/node.png" class="img-responsive rounded-3" style="width:50%" alt="node">
+                        <img src="./assets/icons/mui.png" class="img-responsive rounded-3" style="width:50%" alt="mui">
                     </div>
                     <div class="d-flex justify-content-center col-sm-3 p-3">
-                        <img src="./assets/icons/react.png" class="img-responsive rounded-3" style="width:50%" alt="react">
+                        <img src="./assets/icons/jwt.png" class="img-responsive rounded-3" style="width:50%" alt="jwt">
                     </div>
+                    <div class="d-flex justify-content-center col-sm-3 p-3">
+                        <img src="./assets/icons/npm.png" class="img-responsive rounded-3" style="width:50%" alt="npm">
+                    </div>
+                    <div class="d-flex justify-content-center col-sm-3 p-3">
+                        <img src="./assets/icons/heroku.png" class="img-responsive rounded-3" style="width:50%" alt="heroku">
+                    </div>
+                    
                     <div class="d-flex justify-content-center col-sm-3 p-3">
                         <img src="./assets/icons/github.png" class="img-responsive rounded-3" style="width:50%" alt="github">
                     </div>
@@ -194,7 +243,7 @@
         
         <section class="container text-center col-md-6 justify-content-evenly p-5">
             <div id="resume" class="d-flex row mt-5">
-                <h2 class="mb-5">Download my resume</h2>
+                <h2 class="mb-5">Download resume</h2>
                 <a href="./assets/mackenzie_gray_resume.pdf" download="mackenzie_gray_resume.pdf" target="_blank"><button type="button" class="btn btn-dark">Download</button></a>
             </div>  
 
