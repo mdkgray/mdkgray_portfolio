@@ -12,12 +12,6 @@ A portfolio to showcase my skills and proficiencies as a full stack web develope
 ![Screenshot2](./assets/screenshots/screenshot2.png)
 ![Screenshot3](./assets/screenshots/screenshot3.png)
 
-## Table of Contents
-
-* [License](#License)
-* [Acknowledgments](#Acknowledgments)
-* [Questions](#Questions)
-
 ## License
 
 Mozilla
